@@ -1,0 +1,15 @@
+plugins {
+    id 'com.google.protobuf'
+    id 'org.springframework.boot'
+}
+
+apply from: '../protobuf.gradle'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'net.devh:grpc-server-spring-boot-starter'
+
+    implementation "io.grpc:grpc-protobuf"
+    implementation "io.grpc:grpc-stub"
+    compileOnly 'jakarta.annotation:jakarta.annotation-api'
+}
