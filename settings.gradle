@@ -1,3 +1,10 @@
 rootProject.name = 'grpc-demo'
 include 'tutorial'
 
+include 'filmpoisk'
+include 'filmpoisk:grpc-server'
+findProject(':filmpoisk:grpc-server')?.name = 'grpc-server'
+include 'filmpoisk:commons'
+findProject(':filmpoisk:commons')?.name = 'commons'
+include 'filmpoisk:grpc-client'
+findProject(':filmpoisk:grpc-client')?.name = 'grpc-client'

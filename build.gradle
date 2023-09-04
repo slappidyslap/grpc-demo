@@ -5,6 +5,7 @@ buildscript {
         grpcVersion = '1.51.0'
         springBootVersion = '2.7.15'
         dependencyManagementVersion = '1.0.15.RELEASE'
+        mapstructVersion = '1.5.5.Final'
     }
 }
 
@@ -29,9 +30,15 @@ subprojects {
             dependency 'net.devh:grpc-server-spring-boot-starter:2.14.0.RELEASE'
             dependencySet("io.grpc:$grpcVersion") {
                 entry 'grpc-protobuf'
-                entry 'grpc-protobuf'
+                entry 'grpc-stub'
+            }
+            dependencySet("org.mapstruct:$mapstructVersion") {
+                entry 'mapstruct'
+                entry 'mapstruct-processor'
             }
             dependency 'jakarta.annotation:jakarta.annotation-api:1.3.5'
+            dependency 'com.google.errorprone:error_prone_annotations:2.11.0'
+            dependency "com.google.protobuf:protobuf-java:$protobufVersion"
         }
     }
 

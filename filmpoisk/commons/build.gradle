@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library'
+    id 'com.google.protobuf'
+}
+
+dependencies {
+    implementation "io.grpc:grpc-protobuf"
+    implementation "io.grpc:grpc-stub"
+    compileOnly 'jakarta.annotation:jakarta.annotation-api'
+}
+
+apply from: "$rootDir/protobuf.gradle"
