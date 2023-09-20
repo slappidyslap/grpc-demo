@@ -6,9 +6,9 @@ import "google/protobuf/empty.proto";
 
 option java_multiple_files = true;
 option java_package = "kg.musabaev.filmpoisk.grpc.commmons";
-option java_outer_classname = "FilmpoiskProto";
+option java_outer_classname = "FilmServiceProto";
 
-service FilmpoiskService {
+service FilmService {
   rpc FindAllFilms(google.protobuf.Empty) returns (stream FilmListViewResponse) {}
   rpc FindAllByTitle(FilmByTitleRequest) returns (stream FilmListViewResponse) {}
   rpc FindById(FilmByIdRequest) returns (FilmItemViewResponse) {}

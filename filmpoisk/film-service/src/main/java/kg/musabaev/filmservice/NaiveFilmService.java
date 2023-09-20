@@ -1,4 +1,4 @@
-package kg.musabaev.grpcserver;
+package kg.musabaev.filmservice;
 
 import com.google.protobuf.Empty;
 import io.grpc.Status;
@@ -11,12 +11,12 @@ import net.devh.boot.grpc.server.service.GrpcService;
 
 import java.util.Optional;
 
-import static kg.musabaev.grpcserver.FilmpoiskGrpcServerApplication.films;
+import static kg.musabaev.filmservice.FilmServiceApplication.films;
 
 @GrpcService
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-public class NaiveFilmpoiskService extends FilmpoiskServiceGrpc.FilmpoiskServiceImplBase {
+public class NaiveFilmService extends FilmServiceGrpc.FilmServiceImplBase {
 
 	FilmMapper filmMapper;
 

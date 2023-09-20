@@ -1,4 +1,4 @@
-package kg.musabaev.grpcserver;
+package kg.musabaev.filmservice;
 
 public record Film(
 		int id,

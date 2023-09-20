@@ -1,4 +1,4 @@
-package kg.musabaev.grpcserver;
+package kg.musabaev.filmservice;
 
 import org.mapstruct.Mapping;
 

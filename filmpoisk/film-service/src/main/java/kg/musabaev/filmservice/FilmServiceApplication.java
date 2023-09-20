@@ -1,4 +1,4 @@
-package kg.musabaev.grpcserver;
+package kg.musabaev.filmservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class FilmpoiskGrpcServerApplication {
+public class FilmServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(FilmpoiskGrpcServerApplication.class, args);
+		SpringApplication.run(FilmServiceApplication.class, args);
 	}
 
 	public static List<Film> films = List.of(

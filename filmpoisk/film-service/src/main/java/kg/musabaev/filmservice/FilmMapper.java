@@ -1,4 +1,4 @@
-package kg.musabaev.grpcserver;
+package kg.musabaev.filmservice;
 
 import kg.musabaev.filmpoisk.grpc.commmons.FilmItemViewResponse;
 import kg.musabaev.filmpoisk.grpc.commmons.FilmListViewResponse;
